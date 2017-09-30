@@ -10,13 +10,13 @@ import { Animal }    from '../animals.model';
 export class AnimalFormComponent {
 
   newAnimal() {
-    this.model = new Animal('a', 'a', 0, 0);
+    this.model = new Animal('a', 'a', 0, 0, '', '');
   }
 
   species = ['Mammal', 'Bird',
              'Fish', 'Reptile'];
 
-  model = new Animal('Goat', this.species[0], 50, 140);
+  model = new Animal('Goat', this.species[0], 50, 140, 'http://pngimg.com/uploads/goat/goat_PNG13154.png?i=1', 'The goat. The goatest of all the animal land.');
 
   submitted = false;
 
