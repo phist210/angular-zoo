@@ -1,4 +1,4 @@
-# Angular Zoo
+# 🐯 Angular Zoo 🐒
 
 ## Getting Started
 
