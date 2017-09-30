@@ -5,9 +5,25 @@ app-root {
     margin: 0 auto;
 }
 
+.zoo-gallery {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
 .zoo-header {
     text-align: center;
     margin-top: -1em;
+}
+
+.animal-block {
+    margin: 1px;
+    border: 1px solid black;
+}
+
+.col-xs-4 {
+    width: 35%;
 }
 
 form {
@@ -31,7 +47,7 @@ form {
     /* red */
 }
 
-img {
+.form-img {
     margin-left: 50%;
     margin-top: 2em;
 }

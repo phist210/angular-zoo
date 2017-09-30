@@ -1,7 +1,7 @@
 import { NgModule }             from '@angular/core';
 import { BrowserModule }        from '@angular/platform-browser';
 import { FormsModule }          from '@angular/forms';
- 
+import {ZooService}             from './zoo-service';
 import { AppComponent }         from './app.component';
 import { AnimalFormComponent }  from './animal-form/animal-form.component';
 import { AnimalListComponent }  from './animal-list/animal-list.component';
@@ -33,6 +33,7 @@ const appRoutes: Routes = [
     AnimalDetailComponent,
     NotFoundComponent,
   ],
+  providers: [ ZooService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

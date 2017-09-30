@@ -29,7 +29,7 @@
             <div class="form-group">
                 <label for="Image">Image URL:</label>
                 <input type="text" class="form-control" id="imageUrl" [(ngModel)]="model.imageUrl" name="imageUrl">
-                <img id="imageUrl" name="imageUrl" src='{{model.imageUrl}}' />
+                <img id="imageUrl" class='form-img' name="imageUrl" src='{{model.imageUrl}}' />
             </div>
 
             <button type="submit" class="btn btn-success" [disabled]='!animalForm.form.valid'>Submit</button>
