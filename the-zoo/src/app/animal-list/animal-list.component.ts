@@ -17,8 +17,8 @@ export class AnimalListComponent implements OnInit {
   }
 
    quantityUp(val){
-     console.log(val)
-     val.quantity ++
+    console.log(val)
+    val.quantity ++
   }
 
   ngOnInit() {

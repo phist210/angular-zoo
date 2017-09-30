@@ -1,17 +1,21 @@
 <div class="zoo-gallery">
     <div class='animal-block col-xs-4' *ngFor="let animal of this.animals.animals">
-        <h4 class='card-title'>The {{animal.name}}!</h4>
         <div class="card" style="width: 20rem;" *ngIf="animal.quantity !== 0">
+            <h4 class='card-title'>The {{animal.name}}!</h4>
             <img class="card-img-top img" width="200" src="{{animal.imageUrl}}" alt="Card image cap">
             <div class="card-block">
                 <h5>Species: {{animal.species}}</h5>
                 <h5>Height: {{animal.height}} inches</h5>
                 <h5>Weight: {{animal.weight}} pounds</h5>
-                <h5>Description:{{animal.desc}}</h5>
-                <div>
-                    <button class="btn btn-success" (click)="quantityUp(animal)"> + </button>
+                <h5>Description:</h5>{{animal.desc}}
+                <div class='counter-block'>
+                    <div class="counter" (click)="quantityUp(animal)">
+                        <i class="fa fa-chevron-double-up"></i>
+                    </div>
                     <h5>Quantity: {{animal.quantity }} </h5>
-                    <button class="btn btn-danger" (click)="quantityDown(animal)"> - </button>
+                    <div class="counter" (click)="quantityDown(animal)">
+                        <i class="fa fa-chevron-double-down"></i>
+                    </div>
                 </div>
             </div>
         </div>

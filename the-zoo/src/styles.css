@@ -9,7 +9,11 @@ app-root {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.counter {
+    text-align: center;
 }
 
 .zoo-header {
@@ -22,11 +26,11 @@ app-root {
     border: 1px solid black;
 }
 
-.col-xs-4 {
-    width: 35%;
+form {
+    padding: 1em;
 }
 
-form {
+.counter-block {
     padding: 1em;
 }
 
@@ -48,6 +52,7 @@ form {
 }
 
 .form-img {
-    margin-left: 50%;
+    max-width: 50%;
+    margin-left: 40%;
     margin-top: 2em;
 }

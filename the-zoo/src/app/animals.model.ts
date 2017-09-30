@@ -7,6 +7,7 @@ export class Animal {
       public species: string,
       public height: number,
       public weight: number,
+      public quantity: number,
       public imageUrl?: string,
       public desc?: string,
     ){}
